@@ -10,9 +10,9 @@
 <body>
     <center>
 
-        <h2>REGISTRSTION APPLICATION FROM FOR OUR COURSE-O LEVEL</h2>
+        <h3>REGISTRSTION APPLICATION FROM FOR OUR COURSE-O LEVEL</h3>
 
-        <table border="1px" cellspacing="0px" cellpadding="2px" width="70%">
+        <table border="1px" cellspacing="0px" cellpadding="5px" width="60%">
             <form action="">
                 <tr>
                     <td colspan="3" bgcolor="#1c96c5">
@@ -20,19 +20,20 @@
                     </td>
                 </tr>
                 <!-- 1.0 -->
-                <tr>
+                <tr> 
                     <td width="5%">
                         1.0
                     </td>
                     <td>
-                        <p>Have you got online reference number for enrolment with NIELIT/Accreditation/Extension Center
-                        </p>
+                        <label>Have you got online reference number for enrolment with NIELIT/Accreditation/Extension
+                            Center
+                        </label>
                     </td>
                     <td width="45%">
-                        <label for="">No</label>
-                        <input type="radio" name="online" id="">
-                        <label for="">Yes</label>
-                        <input type="radio" name="online" id="">
+                        <label for="1.0_no">No</label>
+                        <input type="radio" name="online" id="1.0_no" required>
+                        <label for="1.0_yes">Yes</label>
+                        <input type="radio" name="online" id="1.0_yes">
                     </td>
                 </tr>
                 <!-- 1.1 -->
@@ -41,16 +42,14 @@
                         1.1
                     </td>
                     <td>
-                        <p>Registration sought for</p>
+                        <label>Registration sought for</label>
                     </td>
                     <td width="45%">
-                        <select name="" id="" disabled>
+                        <select name="" id="" disabled required>
                             <option value="">
-                                <font>O-Level</font>
+                                O-Level
                             </option>
-                            <option value="">
-                                <font>A-Level</font>
-                            </option>
+
                         </select>
                     </td>
                 </tr>
@@ -60,13 +59,13 @@
                         1.2
                     </td>
                     <td>
-                        <p>Applied As</p>
+                        <label>Applied As</label>
                     </td>
                     <td width="45%">
-                        <label for="">Direct Candidate</label>
-                        <input type="radio" name="Applied" id="">
-                        <label for="">Trough Insititute</label>
-                        <input type="radio" name="Applied" id="">
+                        <label for="1.2_Direct_candidate">Direct Candidate</label>
+                        <input type="radio" name="Applied" id="1.2_Direct_candidate" required >
+                        <label for="1.2_Trough_institute">Trough Insititute</label>
+                        <input type="radio" name="Applied" id="1.2_Trough_institute">
                     </td>
                 </tr>
                 <!-- 1.3 -->
@@ -75,10 +74,10 @@
                         1.3
                     </td>
                     <td>
-                        <p>Exam Cycle</p>
+                        <label for="exam">Exam Cycle</label>
                     </td>
                     <td width="45%">
-                        <input type="text" name="" id="" value="July, 2022">
+                        <input type="text" name=""  value="July, 2022" id="exam" required>
                     </td>
                 </tr>
                 <!-- 1.4 -->
@@ -87,12 +86,15 @@
                         1.4
                     </td>
                     <td>
-                        <p>Registration Fee Will Be Paid By?</p>
+                        <label for="">Registration Fee Will Be Paid By?</label>
+
                     </td>
                     <td width="45%">
-                        <input type="text" name="" id="" value="Candidate Direct to NIELIT">
+                        <input type="text" name="" id="" value="Candidate Direct to NIELIT" disabled>
                     </td>
                 </tr>
+
+
 
                 <!-- 2.0 -->
                 <tr>
@@ -100,23 +102,404 @@
                         <font color="white"><strong>2. Applicant's Personal Details</strong></font>
                     </td>
                 </tr>
-                <!-- 2.0 -->
+                <!-- 2.1 -->
                 <tr>
                     <td width="5%">
-                        2.0
+                        2.1
                     </td>
                     <td>
-                        <p>Applicnat'</p>
+                        <label for="Name">Applicant's full name</label>
                     </td>
                     <td width="45%">
-                        <input type="text" name="" id="" value="Candidate Direct to NIELIT">
+                        <select name="" id="" required>
+                            <option name="" id="" disabled selected>--Select--</option>
+                            <option name="" id="">Mr.</option>
+                            <option name="" id="">Mrs.</option>
+
+                        </select>
+                        <input type="text" id="Name" required>
+                    </td>
+                </tr>
+                <!-- 2.2 -->
+                <tr>
+                    <td width="5%">
+                        2.2
+                    </td>
+                    <td>
+                        <label for="">Care Of</label>
+                    </td>
+                    <td width="45%">
+                        <label for="Parents">Parents</label>
+                        <input type="radio" name="Guardian" id="Parents" checked required>
+                        <label for="Guardian">Guardian</label>
+                        <input type="radio" name="Guardian" id="Guardian">
+
+
+                    </td>
+                </tr>
+                <!-- 2.2.1 -->
+                <tr>
+                    <td width="5%">
+                        2.2.1
+                    </td>
+                    <td>
+                        <label for="Father">Father's Name</label>
+                    </td>
+                    <td width="45%">
+                        <select name="" id="" disabled>
+                            <option value="">Mr.</option>
+                        </select>
+                        <input type="text" id="Father" required>
+                    </td>
+                </tr>
+                <!-- 2.2.2 -->
+                <tr>
+                    <td width="5%">
+                        2.2.2
+                    </td>
+                    <td>
+                        <label for="Mother">Mother's Name</label>
+                    </td>
+                    <td width="45%">
+                        <select name="" id="" disabled>
+                            <option value="">Mrs.</option>
+                        </select>
+                        <input type="text" id="Mother" required>
+                    </td>
+                </tr>
+                <!-- 2.3 -->
+                <tr>
+                    <td width="5%">
+                        2.3
+                    </td>
+                    <td>
+                        <label>Gender</label>
+                    </td>
+                    <td width="45%">
+                        <label for="male">Male</label>
+                        <input type="radio" name="Gender" id="male" required>
+                        <label for="female">Female</label>
+                        <input type="radio" name="Gender" id="female">
+                        <label for="other">Other</label>
+                        <input type="radio" name="Gender" id="other">
+                    </td>
+                </tr>
+                <!-- 2.4 -->
+                <tr>
+                    <td width="5%">
+                        2.4
+                    </td>
+                    <td>
+                        <label for="DOB">Date of Birht</label>
+                    </td>
+                    <td width="45%">
+                        <input type="date" name="" id="DOB" required>
+                    </td>
+                </tr>
+                <!-- 2.5 -->
+                <tr>
+                    <td width="5%">
+                        2.5
+                    </td>
+                    <td>
+                        <label for="Marital">Marital Status</label>
+                    </td>
+                    <td width="45%">
+                        <select name="" id="Marital" required>
+                            <option value="" disabled selected>--Select--</option>
+                            <option value="">Married</option>
+                            <option value="">Unmarried</option>
+                        </select>
+                    </td>
+                </tr>
+                <!-- 2.6 -->
+                <tr>
+                    <td width="5%">
+                        2.6
+                    </td>
+                    <td>
+                        <label for="Category">Category</label>
+                    </td>
+                    <td width="45%">
+                        <select name="" id="Category" required>
+                            <option value="" disabled selected>--Select--</option>
+                            <option value="">SC</option>
+                            <option value="">OBC</option>
+                            <option value="">ST</option>
+                            <option value="">General</option>
+                        </select>
+
+
+                    </td>
+                </tr>
+                <!-- 2.7 -->
+                <tr>
+                    <td width="5%">
+                        2.7
+                    </td>
+                    <td>
+                        <label>Handicapped</label>
+                    </td>
+                    <td width="45%">
+                        <label for="hand_no">No</label>
+                        <input type="radio" name="Handicapped" id="hand_no" checked required>
+                        <label for="hand_yes">Yes</label>
+                        <input type="radio" name="Handicapped" id="hand_yes">
+
+
+                    </td>
+                </tr>
+                <!-- 2.8 -->
+                <tr>
+                    <td width="5%">
+                        2.8
+                    </td>
+                    <td>
+                        <label>Ex-Serviceman</label>
+                    </td>
+                    <td width="45%">
+                        <label for="EX_no">No</label>
+                        <input type="radio" name="Ex-Serviceman" id="EX_no" checked required>
+                        <label for="EX_yes">Yes</label>
+                        <input type="radio" name="Ex-Serviceman" id="EX_yes">
+
+
+                    </td>
+                </tr>
+                <!-- 2.9 -->
+                <tr>
+                    <td width="5%">
+                        2.9
+                    </td>
+                    <td>
+                        <label>EWS</label>
+                    </td>
+                    <td width="45%">
+                        <label for="EWS_no">No</label>
+                        <input type="radio" name="EWS" id="EWS_no" checked required>
+                        <label for="EWS_yes">Yes</label>
+                        <input type="radio" name="EWS" id="EWS_yes">
+
+
+                    </td>
+                </tr>
+                <!-- 2.10 -->
+                <tr>
+                    <td>2.10</td>
+                    <td>
+                        <label for="Religion">Religion</label>
+                    </td>
+                    <td>
+                        <select name="" id="Religion" required>
+                            <option value="" disabled selected>--Select--</option>
+                            <option value="">Sikh</option>
+                            <option value="">Hindu</option>
+                            <option value="">Muslim</option>
+                            <option value="">Christ</option>
+                        </select>
+
                     </td>
                 </tr>
 
 
 
+                <!-- 3.0 -->
+                <tr>
+                    <td colspan="3" bgcolor="#1c96c5">
+                        <strong>3. Contact Details</strong>
+                    </td>
+                </tr>
+                <!-- 3.1 -->
+                <tr>
+                    <td>3.1</td>
+                    <td>
+                        <label for="Mobile">Mobile Number</label>
+                    </td>
+                    <td>
+                        <input type="number" name="" id="Mobile" required>
+                    </td>
+                </tr>
+                <!-- 3.2 -->
+                <tr>
+                    <td>
+                        3.2
+                    </td>
+                    <td>
+                        <label for="Email">Email ID</label>
+                    </td>
+                    <td>
+                        <input type="email" name="" id="Email" required>
+                    </td>
+                </tr>
+                <!-- 3.3 -->
+                <tr>
+                    <td>
+                        3.3
+                    </td>
+                    <td>
+                        <label for="Address_1">Address Line 1</label>
+                    </td>
+                    <td>
+                        <input type="text" name="" id="Address_1" required>
+                    </td>
+                </tr>
+                <!-- 3.4 -->
+                <tr>
+                    <td>
+                        3.3
+                    </td>
+                    <td>
+                        <label for="Address_2">Address Line 2</label>
+                    </td>
+                    <td>
+                        <input type="text" name="" id="Address_2" required>
+                    </td>
+                </tr>
+                <!-- 3.5 -->
+                <tr>
+                    <td>
+                        3.3
+                    </td>
+                    <td>
+                        <label for="City">City</label>
+                    </td>
+                    <td>
+                        <input type="text" name="" id="City" required>
+                    </td>
+                </tr>
+                <!-- 3.6 -->
+                <tr>
+                    <td>3.6</td>
+                    <td>
+                        <label for="state">state</label>
+                    </td>
+                    <td>
+                        <select id="state" name="" required>
+                            <option value="" disabled selected>--Select--</option>
+                            <option value="">Andhra Pradesh</option>
+                            <option value="">Arunachal Pradesh</option>
+                            <option value="">Assam</option>
+                            <option value="">Bihar</option>
+                            <option value="">Chhattisgarh</option>
+                            <option value="">Goa</option>
+                            <option value="">Gujarat</option>
+                            <option value="">Haryana</option>
+                            <option value="">Himachal Pradesh</option>
+                            <option value="">Jharkhand</option>
+                            <option value="">Karnataka</option>
+                            <option value="">Kerala</option>
+                            <option value="">Madhya Pradesh</option>
+                            <option value="">Maharashtra</option>
+                            <option value="">Manipur</option>
+                            <option value="">Meghalaya</option>
+                            <option value="">Mizoram</option>
+                            <option value="">Nagaland</option>
+                            <option value="">Odisha</option>
+                            <option value="">Punjab</option>
+                            <option value="">Rajasthan</option>
+                            <option value="">Sikkim</option>
+                            <option value="">Tamil Nadu</option>
+                            <option value="">Telangana</option>
+                            <option value="">Tripura</option>
+                            <option value="">Uttar Pradesh</option>
+                            <option value="">Uttarakhand</option>
+                            <option value="">West Bengal</option>
+                            <option value="">Andaman and Nicobar Islands</option>
+                            <option value="">Chandigarh</option>
+                            <option value="">Dadra and Nagar Haveli and Daman and Diu</option>
+                            <option value="">Lakshadweep</option>
+                            <option value="">Delhi</option>
+                            <option value="">Puducherry</option>
+                            <option value="">Ladakh</option>
+                            <option value="">Jammu and Kashmir</option>
+                        </select>
+                    </td>
+                </tr>
+                <!-- 3.7 -->
+                <tr>
+                    <td>3.7</td>
+                    <td>
+                        <label for="Pin">Pin Code</label>
+                    </td>
+                    <td>
+                        <input type="text" id="Pin" required>
+                    </td>
+                </tr>
+
+
+                <!-- 4.0 -->
+                <tr>
+                    <td colspan="3" bgcolor="#1c96c5">
+                        <strong>4. Education /Qualification Derails</strong>
+                    </td>
+                </tr>
+                <!-- 4.1-->
+                <tr>
+                    <td>4.1</td>
+                    <td>
+                        <label for="Higher">Higher Education</label>
+                    </td>
+                    <td>
+                        <select id="Higher" name="" required>
+                            <option value="" disabled selected>--Select--</option>
+                            <option value="">10th</option>
+                            <option value="">12th</option>
+                            <option value="">Graduation</option>
+                            <option value="">Post Graduation</option>
+
+                        </select>
+                    </td>
+                </tr>
+                <!-- 4.2 -->
+                <tr>
+                    <td>4.2</td>
+                    <td>
+                        <label for="Passing">Year of Passing</label>
+                    </td>
+                    <td>
+                        <input type="text" id="Passing" required>
+                    </td>
+                </tr>
+
+
+                <!-- 5.0 -->
+                <tr>
+                    <td colspan="3" bgcolor="#1c96c5">
+                        <strong>5. Identification Details</strong>
+                    </td>
+                </tr>
+                <!-- 5.1 -->
+                <tr>
+                    <td>5.1</td>
+                    <td>
+                        <label for="Adhar">Adhar Card Number</label>
+                    </td>
+                    <td>
+                        <input type="number" id="Adhar" required>
+                    </td>
+                </tr>
+                <!-- 5.2 -->
+                <tr>
+                    <td>5.2</td>
+                    <td>
+                        <label for="Photo">Upload Photo</label>
+                    </td>
+                    <td>
+                        <input type="file" name="" id="Photo" required>
+                    </td>
+                </tr>
+
+                <!-- Buttons -->
+                <tr>
+                    <th colspan="3">
+                        <button type="submit">Submit</button>
+                        <button type="reset">Back</button>
+                    </th>
+                </tr>
+
             </form>
         </table>
+        <br><br><br>
     </center>
 </body>
 
